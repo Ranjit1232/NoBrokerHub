@@ -1,0 +1,526 @@
+/* ================================
+   MY RENTAL REQUESTS PAGE
+================================ */
+
+.rental-requests-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.rental-requests-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 50px;
+
+  background: white;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.rental-requests-logo {
+  font-size: 22px;
+  font-weight: 800;
+
+  color: #222;
+
+  cursor: pointer;
+}
+
+.rental-requests-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rental-requests-menu button {
+  border: none;
+  background: transparent;
+
+  padding: 10px 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #444;
+
+  cursor: pointer;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.rental-requests-menu button:hover {
+  background: #f0f1ff;
+  color: #667eea;
+}
+
+.rental-requests-menu button.active {
+  background: #667eea;
+  color: white;
+}
+
+
+/* ================================
+   MAIN SECTION
+================================ */
+
+.rental-requests-section {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 50px 30px 70px;
+}
+
+.rental-requests-header {
+  margin-bottom: 35px;
+}
+
+.rental-requests-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 32px;
+
+  color: #222;
+}
+
+.rental-requests-header p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 16px;
+}
+
+
+/* ================================
+   REQUEST LIST
+================================ */
+
+.rental-requests-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* ================================
+   REQUEST ITEM
+================================ */
+
+.rental-request-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 25px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.rental-request-item:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.11);
+}
+
+
+/* ================================
+   PROPERTY ICON
+================================ */
+
+.request-property-icon {
+  width: 110px;
+  height: 110px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #667eea,
+      #764ba2
+    );
+
+  font-size: 48px;
+
+  color: white;
+}
+
+
+/* ================================
+   PROPERTY INFO
+================================ */
+
+.request-property-info {
+  flex: 1;
+}
+
+.request-property-info h2 {
+  margin: 0 0 8px;
+
+  font-size: 22px;
+
+  color: #222;
+}
+
+.request-location {
+  margin: 0 0 10px;
+
+  color: #667eea;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.request-rent {
+  margin: 0 0 15px;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  color: #222;
+}
+
+.request-rent span {
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: #777;
+}
+
+
+/* ================================
+   MESSAGE
+================================ */
+
+.request-message {
+  padding: 12px 15px;
+
+  background: #f8f9ff;
+
+  border-radius: 10px;
+
+  max-width: 650px;
+}
+
+.request-message strong {
+  font-size: 13px;
+
+  color: #555;
+}
+
+.request-message p {
+  margin: 5px 0 0;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* ================================
+   RIGHT SECTION
+================================ */
+
+.request-right-section {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-width: 150px;
+}
+
+
+/* ================================
+   STATUS
+================================ */
+
+.request-status {
+  display: inline-block;
+
+  padding: 7px 18px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.request-status.pending {
+  background: #fff4d6;
+
+  color: #b77900;
+}
+
+.request-status.approved {
+  background: #e5f8eb;
+
+  color: #218739;
+}
+
+.request-status.rejected {
+  background: #ffe7e7;
+
+  color: #d93025;
+}
+
+
+/* ================================
+   VIEW PROPERTY BUTTON
+================================ */
+
+.request-view-button {
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #667eea;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.request-view-button:hover {
+  background: #5568d8;
+}
+
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.rental-requests-empty {
+  max-width: 600px;
+
+  margin: 60px auto;
+
+  padding: 50px 30px;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.empty-request-icon {
+  font-size: 70px;
+
+  margin-bottom: 15px;
+}
+
+.rental-requests-empty h2 {
+  margin: 10px 0;
+
+  color: #222;
+}
+
+.rental-requests-empty p {
+  color: #777;
+
+  margin-bottom: 25px;
+}
+
+.rental-primary-button {
+  padding: 12px 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #667eea;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   LOADING / ERROR
+================================ */
+
+.rental-requests-message {
+  text-align: center;
+
+  padding: 80px 20px;
+
+  color: #555;
+}
+
+.rental-requests-message.error {
+  color: #d93025;
+}
+
+.rental-requests-message button {
+  margin-top: 15px;
+
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #667eea;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.rental-requests-footer {
+  padding: 35px 20px;
+
+  text-align: center;
+
+  background: #1f1f1f;
+
+  color: white;
+}
+
+.rental-requests-footer h3 {
+  margin: 0 0 10px;
+
+  font-size: 22px;
+}
+
+.rental-requests-footer p {
+  margin: 6px 0;
+
+  color: #bbb;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .rental-requests-navbar {
+    padding: 18px 25px;
+  }
+
+  .rental-request-item {
+    align-items: flex-start;
+  }
+
+  .request-right-section {
+    min-width: 130px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .rental-requests-navbar {
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+  .rental-requests-menu {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .rental-requests-section {
+    padding: 35px 15px 50px;
+  }
+
+  .rental-requests-header h1 {
+    font-size: 26px;
+  }
+
+  .rental-request-item {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .request-property-icon {
+    width: 100%;
+    height: 160px;
+  }
+
+  .request-right-section {
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    min-width: auto;
+  }
+
+  .request-message {
+    max-width: 100%;
+  }
+}

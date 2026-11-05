@@ -1,0 +1,67 @@
+/* Common Navbar */
+
+.dashboard-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.dashboard-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-menu button {
+  border: none;
+  background: transparent;
+  padding: 9px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.dashboard-menu button:hover {
+  background: #f1f3f8;
+  color: #4f46e5;
+}
+
+.dashboard-menu button.active {
+  background: #4f46e5;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .dashboard-navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dashboard-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-menu button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}

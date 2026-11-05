@@ -1,0 +1,148 @@
+.owner-dashboard-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+/* Welcome Section */
+
+.owner-welcome {
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  padding: 30px 35px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.owner-welcome h1 {
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.owner-welcome p {
+  margin: 0;
+  color: #777;
+  font-size: 15px;
+}
+
+.owner-welcome-icon {
+  font-size: 55px;
+}
+
+/* Section */
+
+.owner-section {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 25px;
+}
+
+.owner-section h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Quick Actions */
+
+.owner-quick-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Action Card */
+
+.owner-action-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.owner-action-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.owner-action-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.owner-action-card h3 {
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.owner-action-card p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 42px;
+}
+
+/* Action Button */
+
+.owner-action-card button {
+  width: 100%;
+  margin-top: 15px;
+
+  padding: 11px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.owner-action-card button:hover {
+  background: #3730a3;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .owner-quick-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .owner-welcome {
+    margin: 30px 20px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .owner-quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .owner-welcome {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 25px 15px;
+  }
+
+  .owner-section {
+    padding: 0 15px;
+  }
+}
+

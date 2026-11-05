@@ -1,0 +1,247 @@
+/* ============================= */
+/* Manage Owners Page */
+/* ============================= */
+
+.manage-owners-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================= */
+/* Admin Navbar */
+/* ============================= */
+
+.admin-navbar {
+  background: #111827;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.admin-nav-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-nav-links button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.admin-nav-links button:hover {
+  background: #374151;
+}
+
+.admin-nav-links .active-admin-link {
+  background: #2563eb;
+}
+
+/* ============================= */
+/* Main Content */
+/* ============================= */
+
+.manage-owners-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  flex: 1;
+}
+
+.manage-owners-content h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.manage-owners-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* ============================= */
+/* Table Container */
+/* ============================= */
+
+.owners-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================= */
+/* Owners Table */
+/* ============================= */
+
+.owners-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.owners-table thead {
+  background: #111827;
+  color: white;
+}
+
+.owners-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.owners-table td {
+  padding: 15px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 14px;
+}
+
+.owners-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.owners-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ============================= */
+/* Owner Status */
+/* ============================= */
+
+.owner-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* Loading / Error Messages */
+/* ============================= */
+
+.owners-message {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.owners-error {
+  text-align: center;
+  padding: 20px;
+  color: #dc2626;
+  background: #fee2e2;
+  border-radius: 8px;
+}
+
+/* ============================= */
+/* No Owners */
+/* ============================= */
+
+.no-owners {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.no-owners h2 {
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.no-owners p {
+  color: #6b7280;
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+
+.admin-footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 18px;
+  margin-top: auto;
+}
+
+.admin-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .admin-navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .admin-nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .manage-owners-content {
+    width: 95%;
+  }
+}
+
+.delete-owner-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-owner-button:hover {
+  background: #b91c1c;
+}
+
+.owners-success {
+  text-align: center;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 8px;
+  font-weight: 600;
+}
